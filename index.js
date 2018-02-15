@@ -1,7 +1,8 @@
 var recipes = {};
 
 function updateObjectWithKeyAndValue(object, key, value){
-  var newObject = Object.assign({key: value});
+  object = {key: value};
+  return object;
   /*  returns an object with the orignal key value pairs and the new key value pair
 it does not modify the original object, but rather returns a clone with the new data*/
 
